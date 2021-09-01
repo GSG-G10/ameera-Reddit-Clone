@@ -11,20 +11,20 @@ CREATE TABLE users (
 CREATE TABLE posts (
     id SERIAL PRIMARY KEY,
     user_id INTEGER REFERENCES users(id),
-    title VARCHAR(255) NOT NULL,
-    content VARCHAR(2000) NOT NULL,
-    imageUrl VARCHAR(2000) NOT NULL,
+    title VARCHAR(1000) NOT NULL,
+    content VARCHAR(1000) NOT NULL,
+    imageUrl TEXT NOT NULL,
     vote INTEGER NOT NULL
 );
 
 
 
-insert into users (name, email,username, password) values ('jmelody0', 'emckilroe0@flavors.me', 'Ok7865m4U','eGjcrrw4ip');
-insert into users (name, email, username,password) values ('akerswill1', 'gkingsnode1@booking.com', 'Ok7865m4U','bAisYN');
-insert into users (name, email,username, password) values ('pradeliffe2', 'maustins2@privacy.gov.au', 'Ok7865m4U', 'Ok7865m4U');
+insert into users (name, email,username, password) values ('hanin', 'hanin@flavors.me', 'hanin23','eGjcrrw4ip');
+insert into users (name, email, username,password) values ('yasmin', 'yasmin@booking.com', 'yasmin33','bAisYN');
+insert into users (name, email,username, password) values ('shireen', 'shireen@privacy.gov.au', 'shireen', 'Ok7865m4U');
 
 
-insert into posts (user_id, title,content, imageUrl,vote) values (1,'test post','test post sdsd','https://www.image.com',0);
+insert into posts (user_id, title,content, imageUrl,vote) values (1,'test post','test post 123','https://www.image.com',0);
 
 insert into posts (user_id, title,content, imageUrl,vote) values (2,'test post1','test post 222','https://www.image2.com',2);
 

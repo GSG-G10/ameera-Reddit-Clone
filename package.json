@@ -7,8 +7,10 @@
         "test": "test"
     },
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "dev": "nodemon ./server/index.js"
+        "start": "cross-env NODE_ENV=production node server/index.js",
+        "dev": "cross-env NODE_ENV=development nodemon server/index.js",
+
+        "test": "cross-env NODE_ENV=test jest"
     },
     "repository": {
         "type": "git",
@@ -21,7 +23,10 @@
     },
     "homepage": "https://github.com/GSG-G10/ameera-Reddit-Clone#readme",
     "dependencies": {
-        "express": "^4.17.1"
+        "cross-env": "^7.0.3",
+        "env2": "^2.2.2",
+        "express": "^4.17.1",
+        "pg": "^8.7.1"
     },
     "devDependencies": {
         "nodemon": "^2.0.12"
