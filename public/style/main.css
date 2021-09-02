@@ -1,0 +1,54 @@
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+     :root {
+        --main-color: #dee3e8;
+        --black: #000000;
+        --second-color: #ff4500;
+    }
+    
+    .flex {
+        display: flex;
+    }
+    
+    header {
+        padding: 10px;
+        background-color: var(--main-color);
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    header img {
+        width: 100px;
+    }
+    
+    header form input {
+        width: 370px;
+        height: 20px;
+        border-radius: 10px;
+        border: 1px solid gray;
+        padding: 17px;
+        color: var(--black);
+        font-size: 20px;
+    }
+    
+    header form input:focus {
+        outline: 0px;
+    }
+    
+    header div a {
+        text-decoration: none;
+        color: var(--second-color);
+        font-size: 20px;
+        text-transform: capitalize;
+        font-weight: 700;
+        margin-left: 20px;
+    }
+    
+    header div a:hover {
+        color: rgb(219, 154, 55);
+    }
