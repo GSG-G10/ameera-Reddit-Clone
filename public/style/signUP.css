@@ -1,0 +1,94 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+ :root {
+    --white: #ffffff;
+    --gray: #a59b9b;
+    --pink: #423a38;
+    --second-color: #ff4500;
+}
+
+body {
+    background-image: url(../image/22.jpg);
+    background-position: center;
+}
+
+.continer {
+    display: grid;
+    place-items: center;
+    margin-top: 70px;
+}
+
+.continer form {
+    border-radius: 40px;
+    width: 460px;
+    min-height: 375px;
+    background-color: var(--white);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.continer form .tittle {
+    text-transform: uppercase;
+    color: var(--pink);
+    font-size: 47px;
+    font-weight: 300;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-weight: 300px;
+    padding: 10px;
+}
+
+.style-input {
+    border: none;
+    border-bottom: 1px solid var(--pink);
+    display: block;
+    margin: 0px auto;
+    width: 70%;
+    margin-top: 35px;
+    font-size: 25px;
+    color: var(--pink);
+}
+
+.style-input:focus {
+    outline: none;
+}
+
+::placeholder {
+    color: rgb(167, 161, 161);
+    opacity: .5;
+    font-size: 20px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.continer form .password {
+    margin-top: 20px;
+}
+
+.continer form button {
+    border: 1px solid var(--second-color);
+    padding: 20px;
+    width: 30%;
+    margin: 55px auto;
+    text-transform: uppercase;
+    display: block;
+    color: var(--second-color);
+    font-weight: 300;
+    border-radius: 20px;
+}
+
+.error {
+    color: red;
+    opacity: .7;
+    text-align: center;
+    margin: 10px auto;
+    opacity: .5;
+    width: 70%;
+    font-size: 12px;
+}
