@@ -2,7 +2,7 @@ const { Pool } = require("pg");
 require("env2")("./.env");
 const { NODE_ENV, URL_DB, DATABASE_URL, TEST_DB } = process.env;
 
-let UrlDb = "";
+let UrlDb = "URL_DB";
 switch (NODE_ENV) {
     case 'development':
         UrlDb = URL_DB;
@@ -18,9 +18,7 @@ switch (NODE_ENV) {
 }
 const option = {
     connectionString: UrlDb,
-    ssl: {
-        rejectUnauthorized: false,
-    },
+    ssl: false
 }
 
 module.exports = new Pool(option);

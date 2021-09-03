@@ -11,10 +11,6 @@ const schema = Joi.object({
 
     repeat_password: Joi.ref('password'),
 
-    access_token: [
-        Joi.string(),
-        Joi.number()
-    ],
 
     email: Joi.string()
         .email({ minDomainSegments: 2, tlds: { allow: ['com', 'net'] } })
