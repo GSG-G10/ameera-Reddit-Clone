@@ -3,6 +3,7 @@ const mainPage = require('../controllers/mainPage.js');
 const signup = require('../controllers/sign.js');
 
 
+
 router.get("/", mainPage);
 router.post('/sign-up', signup);
 
